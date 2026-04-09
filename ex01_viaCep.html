@@ -90,10 +90,8 @@
                         const  conteudo = await resposta.json();
 
                         if (!("erro" in conteudo)) {
-                            document.getElementById('rua').
-                            value = conteudo.logradouro; 
-                            document.getElementById('cidade').
-                            value = conteudo.localidade;
+                            document.getElementById('rua').value = conteudo.logradouro; 
+                            document.getElementById('cidade').value = conteudo.localidade;
                         } else {
                             // CEP possui 8 números mas não existe na base dos correios
                             limparFormularioCEP();
